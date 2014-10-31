@@ -1,4 +1,4 @@
 Book exercises
 --------------
 
-Solution to exercises in books I have read.
+Solution to exercises in books I have read
