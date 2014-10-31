@@ -1,1 +1,1 @@
-Solution to exercises to Brassard's Fundamentals of Algorithmics.
+Solution to exercises in Brassard's Fundamentals of Algorithmics.
