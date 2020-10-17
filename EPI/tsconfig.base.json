@@ -1,0 +1,28 @@
+{
+  "exclude": [ "node_modules", "build" ],
+  "include": [ "**/*.ts", "**/*.js" ],
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "inlineSources": false,
+    "inlineSourceMap": false,
+    "listEmittedFiles": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true
+  }
+}

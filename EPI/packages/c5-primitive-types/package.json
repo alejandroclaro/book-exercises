@@ -1,0 +1,26 @@
+{
+  "name": "@epi/c5-primitive-types",
+  "version": "0.1.14",
+  "description": "Solutions to chapter 5 exercises.",
+  "author": "Alejandro Claro <alejandro.claro@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
+  "files": [
+    "dist/*.js",
+    "dist/types"
+  ],
+  "directories": {
+    "types": "dist/types"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules build",
+    "build": "tsc --project ./tsconfig.json",
+    "lint": "eslint *.{js,json} ./src/**/*.{js,ts,json} ./tests/**/*.{js,ts,json}",
+    "test:unit": "jest"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

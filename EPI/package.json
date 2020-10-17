@@ -1,0 +1,59 @@
+{
+  "name": "epi_books_exercises",
+  "version": "0.0.1",
+  "description": "Solutions to EPI books exercises",
+  "author": "Alejandro Claro <alejandro.claro@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "npmClient": "yarn",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "purge": "yarn clean && rimraf node_modules",
+    "clean": "lerna run clean --stream",
+    "build": "lerna run build --stream",
+    "watch": "lerna run --parallel --no-bail build -- --watch",
+    "lint:config": "eslint *.{js,json}",
+    "lint:md": "markdownlint --config .markdownlintrc.js --ignore ./node_modules/ *.md **/*.md",
+    "lint": "yarn run lint:md && yarn run lint:config && lerna run lint --no-bail --stream --",
+    "test:unit": "lerna run test:unit --stream --no-bail"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-header": "^3.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsdoc": "^30.6.5",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.5.3",
+    "jest-junit": "^12.0.0",
+    "jest-silent-reporter": "^0.2.1",
+    "lerna": "^3.22.1",
+    "markdownlint-cli": "^0.24.0",
+    "rimraf": "^3.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=10.15.0",
+    "yarn": ">=1.17.0"
+  }
+}
